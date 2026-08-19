@@ -36,10 +36,10 @@
 | Reference evidence | Extracted principle | Local component | Motion/state | Mobile translation | Acceptance evidence |
 |---|---|---|---|---|---|
 | Slow Run Club 데스크톱 히어로 | 한 화면에 질문·약속·미디어·CTA 배치 | `Hero` | 영상 페이드가 아니라 타이포·선·CTA가 순서대로 조립 | 영상 우선 배치, 문구 축약, 하단 고정 CTA | 데스크톱/390px 첫 화면 캡처 |
-| Slow Run Club 원칙 목록 | 번호와 짧은 설명으로 철학 전달 | `ValueFlow` | MOVE→CONTROL→CONNECT→FLOW 연결선 진행 | 가로 카드가 아닌 세로 레일로 전환 | 중간 섹션 캡처와 reduced-motion 확인 |
+| Slow Run Club 원칙 목록 | 번호와 짧은 설명으로 철학 전달 | `FlowRail` | MOVE→CONTROL→CONNECT→FLOW 연결선 진행 | 가로 카드가 아닌 세로 레일로 전환 | 데스크톱에서 4개 원과 파란 연결선 전개 확인 |
 | Slow Run Club 진행 순서 | 방문자가 다음 단계를 예측 | `LearningPath` | 현재 단계 강조와 이미지 크롭 변화 | 스와이프가 아닌 읽기 순서형 4단계 | 데스크톱/모바일 순서 확인 |
 | Slow Run Club 마지막 신청 영역 | 결정 정보와 CTA를 한곳에 압축 | `FirstFlowCTA` | CTA hover/focus 및 외부 링크 피드백 | 전체 폭 CTA, 핵심 정보 2열→2x2 | 마지막 섹션 캡처 |
-| 사용자 제공 MP4/JPG | 주장 대신 실제 움직임과 지도 장면 제시 | `MediaStage`, `ProofGallery` | 자동재생·반복·무음·inline, 사진 hover crop | 영상 `object-position` 조정, 사진 수와 높이 축소 | currentSrc/재생 상태/크롭 육안 확인 |
+| 사용자 제공 MP4/JPG | 주장 대신 실제 움직임과 지도 장면 제시 | `Hero`, `WhatIsAnimalFlow`, `ProofGallery` | 자동재생·반복·무음·inline, 사진 hover crop | 영상 대신 poster 우선 노출, 사진 수와 높이 축소 | MP4 currentSrc·재생 상태와 390px poster 크롭 확인 |
 
 ## Signature composition and component
 
@@ -104,7 +104,7 @@
 
 ## Verification captures
 
-- 구현 후 데스크톱 첫 화면과 대표 전체 흐름.
-- 390px 첫 화면, FlowRail 변환, 마지막 신청 화면.
+- 데스크톱 첫 화면, 실제 움직임 증거, 4열 FlowRail, 짙은 학습 경로, 마지막 신청 화면을 실제 브라우저에서 확인했다.
+- 390px 첫 화면에서 poster 크롭, 한국어 제목, 고정 신청 CTA를 확인했다.
 - 첫 장면 조립과 Flow 연결을 증명하는 5–10초 시퀀스.
-- 네이버폼 링크 href/target/rel 검사, 영상 currentSrc와 fallback 검사.
+- 네이버폼 링크 4개의 href/target/rel, 영상 currentSrc·자동재생·무음·반복 상태, 데스크톱 수평 오버플로 없음과 콘솔 오류 없음을 검사했다.

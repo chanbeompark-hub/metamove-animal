@@ -8,7 +8,7 @@ export function Header() {
         <span>METAMOVE · SANGDONG</span>
       </a>
       <nav aria-label="주요 메뉴">
-        <a href="#about">프로그램</a>
+        <a href="#proof">프로그램</a>
         <a href="#learn">배우는 과정</a>
         <a href="#first-flow">FIRST FLOW</a>
       </nav>

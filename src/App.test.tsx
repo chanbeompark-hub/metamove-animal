@@ -21,4 +21,21 @@ describe('application shell', () => {
       expect(link).toHaveAttribute('rel', expect.stringContaining('noopener'))
     })
   })
+
+  it('follows the reference-led editorial section order', () => {
+    const { container } = render(<App />)
+
+    expect(
+      [...container.querySelectorAll('main > section')].map((section) => section.id),
+    ).toEqual(['top', 'proof', 'values', 'moments', 'learn', 'beginner', 'first-flow'])
+  })
+
+  it('moves from the hero to the first proof section', () => {
+    const { container } = render(<App />)
+
+    expect(container.querySelector('.hero .text-link')).toHaveAttribute(
+      'href',
+      '#proof',
+    )
+  })
 })

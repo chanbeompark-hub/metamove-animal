@@ -5,7 +5,7 @@ export function FlowRail() {
   const { ref, isVisible } = useReveal<HTMLDivElement>()
 
   return (
-    <section className="values section section--blue" id="values" aria-labelledby="values-title">
+    <section className="values section" id="values" aria-labelledby="values-title">
       <div className="values__intro">
         <p className="section-index">02 — THE FLOW PRINCIPLES</p>
         <h2 id="values-title">운동 효과보다,<br />움직임을 배우는 경험.</h2>

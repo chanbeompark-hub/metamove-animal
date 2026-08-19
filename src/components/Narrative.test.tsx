@@ -17,4 +17,12 @@ describe('learning narrative', () => {
     expect(within(learning).getByText('Traveling')).toBeInTheDocument()
     expect(within(learning).getByText('Transition')).toBeInTheDocument()
   })
+
+  it('uses a real class image as the first proof after the hero', () => {
+    const { container } = render(<App />)
+    const proof = container.querySelector('#proof')
+
+    expect(proof).not.toBeNull()
+    expect(within(proof as HTMLElement).getByRole('img', { name: /Animal Flow 수업/ })).toBeInTheDocument()
+  })
 })

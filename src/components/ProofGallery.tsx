@@ -12,7 +12,7 @@ export function ProofGallery() {
     <section className="moments section" id="moments" aria-labelledby="moments-title">
       <div className="section-heading section-heading--split">
         <div>
-          <p className="section-index">04 — REAL FLOW MOMENTS</p>
+          <p className="section-index">03 — REAL FLOW MOMENTS</p>
           <h2 id="moments-title">설명보다 빠른,<br />실제 움직임의 순간.</h2>
         </div>
         <p>처음부터 완성된 동작을 요구하지 않습니다. 지지하고, 시도하고, 지도받고, 함께 연결합니다.</p>

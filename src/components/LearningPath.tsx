@@ -9,10 +9,10 @@ const descriptions = [
 
 export function LearningPath() {
   return (
-    <section className="learning section" id="learn" aria-labelledby="learn-title">
+    <section className="learning section section--navy" id="learn" aria-labelledby="learn-title">
       <div className="section-heading section-heading--split">
         <div>
-          <p className="section-index">03 — LEARN, NOT REPEAT</p>
+          <p className="section-index">04 — LEARN, NOT REPEAT</p>
           <h2 id="learn-title">오늘도 같은 운동이 아니라,<br />매주 하나의 움직임을 배웁니다.</h2>
         </div>
         <p>

@@ -17,8 +17,8 @@ export default function App() {
         <Hero />
         <WhatIsAnimalFlow />
         <FlowRail />
-        <LearningPath />
         <ProofGallery />
+        <LearningPath />
         <BeginnerFAQ />
         <FirstFlowCTA />
       </main>
