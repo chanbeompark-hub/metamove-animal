@@ -66,9 +66,9 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .text-link { font-size: 13px; font-weight: 700; }
 .hero__meta { margin-top: auto; padding-top: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; border-top: 1px solid var(--line); font-size: 10px; letter-spacing: .1em; }
 .hero__meta strong { color: var(--blue); }
-.hero__media { min-height: 680px; margin: 70px 0 34px; position: relative; overflow: hidden; background: var(--navy); animation: hero-media-in 1s .1s cubic-bezier(.22,1,.36,1) both; }
+.hero__media { min-height: 620px; height: min(900px, calc(100svh - 120px)); margin: 70px 0 34px; position: relative; overflow: hidden; background: var(--navy); animation: hero-media-in 1s .1s cubic-bezier(.22,1,.36,1) both; }
 .hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 58%, rgba(4,14,35,.82)); pointer-events: none; }
-.hero__media video { height: 100%; object-fit: cover; object-position: center 48%; }
+.hero__media video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 48%; }
 .hero__media figcaption { position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 26px; color: var(--white); display: flex; justify-content: space-between; gap: 20px; font-size: 10px; letter-spacing: .12em; }
 .hero__media-index { position: absolute; z-index: 2; right: 24px; top: 20px; font-size: 64px; font-weight: 800; color: var(--white); line-height: 1; }
 .hero__copy > * { animation: hero-copy-in .72s cubic-bezier(.22,1,.36,1) both; }
