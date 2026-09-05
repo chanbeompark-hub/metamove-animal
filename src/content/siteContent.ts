@@ -1,5 +1,10 @@
 export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
+  outdoorSpecial: {
+    applicationUrl: 'https://naver.me/FbVClEEY',
+    title: '서울식물원 무료 야외 애니멀 특강',
+    facts: ['9월 20일(일) 오전 9시', '서울식물원', '선착순 20명', '무료'],
+  },
   classFacts: [
     { label: '정원', value: '4명' },
     { label: '난이도', value: 'BEGINNER' },

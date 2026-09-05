@@ -2,7 +2,7 @@
 
 ## Product job
 
-상동 지역의 Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하고, 첫 화면 또는 마지막 화면에서 네이버폼을 열어 `FIRST FLOW` 체험을 신청한다.
+Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하고, 첫 화면 또는 마지막 화면에서 정규 `FIRST FLOW` 체험을 신청하거나 기간 한정 야외 특강을 선택한다.
 
 ## Direction
 
@@ -38,7 +38,7 @@
 | Slow Run Club 데스크톱 히어로 | 한 화면에 질문·약속·미디어·CTA 배치 | `Hero` | 영상 페이드가 아니라 타이포·선·CTA가 순서대로 조립 | 영상 우선 배치, 문구 축약, 하단 고정 CTA | 데스크톱/390px 첫 화면 캡처 |
 | Slow Run Club 원칙 목록 | 번호와 짧은 설명으로 철학 전달 | `FlowRail` | MOVE→CONTROL→CONNECT→FLOW 연결선 진행 | 가로 카드가 아닌 세로 레일로 전환 | 데스크톱에서 4개 원과 파란 연결선 전개 확인 |
 | Slow Run Club 진행 순서 | 방문자가 다음 단계를 예측 | `LearningPath` | 현재 단계 강조와 이미지 크롭 변화 | 스와이프가 아닌 읽기 순서형 4단계 | 데스크톱/모바일 순서 확인 |
-| Slow Run Club 마지막 신청 영역 | 결정 정보와 CTA를 한곳에 압축 | `FirstFlowCTA` | CTA hover/focus 및 외부 링크 피드백 | 전체 폭 CTA, 핵심 정보 2열→2x2 | 마지막 섹션 캡처 |
+| Slow Run Club 마지막 신청 영역 | 결정 정보와 CTA를 한곳에 압축 | `FirstFlowCTA` | 기간 한정 특강과 정규 체험 CTA hover/focus 및 외부 링크 피드백 | 특강 정보를 세로로 재배열하고 두 CTA 모두 전체 폭 유지 | 마지막 섹션 캡처와 두 폼 링크 검사 |
 | 사용자 제공 MP4/JPG | 주장 대신 실제 움직임과 지도 장면 제시 | `Hero`, `WhatIsAnimalFlow`, `ProofGallery` | 자동재생·반복·무음·inline, 사진 hover crop | 영상 대신 poster 우선 노출, 사진 수와 높이 축소 | MP4 currentSrc·재생 상태와 390px poster 크롭 확인 |
 
 ## Signature composition and component
@@ -73,7 +73,7 @@
 2. Promise: 내 몸으로 새로운 움직임을 배워보세요.
 3. Proof: 손과 발로 바닥을 지지하고, 이동하고, 회전하고, 연결하는 실제 Flow 영상과 수업 사진.
 4. Choice: Beast Position → Traveling → Transition → FLOW.
-5. Action: FIRST FLOW 신청하기.
+5. Action: 기간 한정 야외 특강 또는 정규 FIRST FLOW 신청하기.
 
 ## Screen priorities
 
@@ -84,6 +84,8 @@
 ## Behavior that must remain unchanged
 
 - 첫 화면과 마지막 화면 신청 버튼은 모두 `https://naver.me/xsZWHr8t`을 새 창으로 연다.
+- 마지막 화면의 야외 특강 버튼은 `https://naver.me/FbVClEEY`을 새 창으로 열며 정규 `FIRST FLOW` 버튼보다 먼저 보인다.
+- 야외 특강의 확인된 정보는 `2026년 9월 20일(일) 오전 9시`, `서울식물원`, `선착순 20명`, `무료`다.
 - 외부 폼 연결에는 `noopener noreferrer`를 적용한다.
 - 사용자가 제공한 문구의 프로그램 정보와 위치를 임의로 변경하지 않는다.
 - 영상 재생이 불가능할 경우 사용자 제공 사진을 poster/fallback으로 표시한다.

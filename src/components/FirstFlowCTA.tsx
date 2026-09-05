@@ -3,7 +3,12 @@ import { ApplyLink } from './ApplyLink'
 
 export function FirstFlowCTA() {
   return (
-    <section className="first-flow section" id="first-flow" aria-labelledby="first-flow-title">
+    <section
+      className="first-flow section"
+      id="first-flow"
+      aria-labelledby="first-flow-title"
+      aria-label="FIRST FLOW 신청 안내"
+    >
       <figure className="first-flow__visual">
         <img
           src={siteContent.media.outdoorCommunity}
@@ -28,6 +33,17 @@ export function FirstFlowCTA() {
           ))}
         </dl>
         <div className="first-flow__apply">
+          <aside className="outdoor-special" aria-label="야외 특강 안내">
+            <span className="outdoor-special__date-mark" aria-hidden="true">20</span>
+            <p className="outdoor-special__eyebrow">SPECIAL OUTDOOR CLASS</p>
+            <h3>{siteContent.outdoorSpecial.title}</h3>
+            <ul className="outdoor-special__facts" aria-label="야외 특강 정보">
+              {siteContent.outdoorSpecial.facts.map((fact) => <li key={fact}>{fact}</li>)}
+            </ul>
+            <ApplyLink href={siteContent.outdoorSpecial.applicationUrl} className="outdoor-special__link">
+              야외 애니멀 특강 신청하기
+            </ApplyLink>
+          </aside>
           <span>무료 체험 클래스</span>
           <ApplyLink>FIRST FLOW 신청하기</ApplyLink>
           <small>네이버폼이 새 창에서 열립니다.</small>
