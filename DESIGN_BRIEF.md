@@ -35,7 +35,7 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 
 | Reference evidence | Extracted principle | Local component | Motion/state | Mobile translation | Acceptance evidence |
 |---|---|---|---|---|---|
-| Slow Run Club 데스크톱 히어로 | 한 화면에 질문·약속·미디어·CTA 배치 | `Hero` | 영상 페이드가 아니라 타이포·선·CTA가 순서대로 조립 | 영상 우선 배치, 문구 축약, 하단 고정 CTA | 데스크톱/390px 첫 화면 캡처 |
+| Slow Run Club 데스크톱 히어로 | 한 화면에 질문·약속·미디어·두 신청 선택지 배치 | `Hero`, `OutdoorSpecialCard` | 영상 페이드가 아니라 타이포·선·CTA가 순서대로 조립 | 영상 우선 배치, 특강 안내 압축, 본문 2–3줄 호흡, 하단 고정 CTA | 데스크톱/320·360·390·430px 첫 화면 캡처와 두 폼 링크 검사 |
 | Slow Run Club 원칙 목록 | 번호와 짧은 설명으로 철학 전달 | `FlowRail` | MOVE→CONTROL→CONNECT→FLOW 연결선 진행 | 가로 카드가 아닌 세로 레일로 전환 | 데스크톱에서 4개 원과 파란 연결선 전개 확인 |
 | Slow Run Club 진행 순서 | 방문자가 다음 단계를 예측 | `LearningPath` | 현재 단계 강조와 이미지 크롭 변화 | 스와이프가 아닌 읽기 순서형 4단계 | 데스크톱/모바일 순서 확인 |
 | Slow Run Club 마지막 신청 영역 | 결정 정보와 CTA를 한곳에 압축 | `FirstFlowCTA` | 기간 한정 특강과 정규 체험 CTA hover/focus 및 외부 링크 피드백 | 특강 정보를 세로로 재배열하고 두 CTA 모두 전체 폭 유지 | 마지막 섹션 캡처와 두 폼 링크 검사 |
@@ -83,8 +83,8 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 
 ## Behavior that must remain unchanged
 
-- 첫 화면과 마지막 화면 신청 버튼은 모두 `https://naver.me/xsZWHr8t`을 새 창으로 연다.
-- 마지막 화면의 야외 특강 버튼은 `https://naver.me/FbVClEEY`을 새 창으로 열며 정규 `FIRST FLOW` 버튼보다 먼저 보인다.
+- 첫 화면과 마지막 화면의 정규 신청 버튼은 모두 `https://naver.me/xsZWHr8t`을 새 창으로 연다.
+- 첫 화면과 마지막 화면의 야외 특강 버튼은 `https://naver.me/FbVClEEY`을 새 창으로 열며 정규 `FIRST FLOW` 버튼보다 먼저 보인다.
 - 야외 특강의 확인된 정보는 `2026년 9월 20일(일) 오전 9시`, `서울식물원`, `선착순 20명`, `무료`다.
 - 외부 폼 연결에는 `noopener noreferrer`를 적용한다.
 - 사용자가 제공한 문구의 프로그램 정보와 위치를 임의로 변경하지 않는다.
@@ -102,11 +102,11 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 - Mobile media behavior: 영상이 헤드라인보다 앞 또는 직후에 나타나고 높이를 제한해 첫 CTA가 과도하게 밀리지 않게 한다. 고정 CTA는 safe-area를 고려한다.
 - Scroll reveal grammar: 제목 → 선 → 내용 순서만 사용하고 섹션마다 다른 효과를 만들지 않는다.
 - Reduced-motion final state: 모든 요소를 최종 상태로 표시하고 영상 자동재생을 강제하지 않는다.
-- Text-clipping viewports: 320/360/390/430px에서 한국어 음절 분리, 버튼 줄바꿈, 수평 스크롤을 검사한다.
+- Text-clipping viewports: 320/360/390/430px에서 본문을 의미 단위 2–3줄로 제한하고 한국어 음절 분리, 버튼 줄바꿈, 수평 스크롤을 검사한다.
 
 ## Verification captures
 
 - 데스크톱 첫 화면, 실제 움직임 증거, 4열 FlowRail, 짙은 학습 경로, 마지막 신청 화면을 실제 브라우저에서 확인했다.
-- 390px 첫 화면에서 poster 크롭, 한국어 제목, 고정 신청 CTA를 확인했다.
-- 첫 장면 조립과 Flow 연결을 증명하는 5–10초 시퀀스.
-- 네이버폼 링크 4개의 href/target/rel, 영상 currentSrc·자동재생·무음·반복 상태, 데스크톱 수평 오버플로 없음과 콘솔 오류 없음을 검사했다.
+- 320/360/390/430px 첫 화면에서 poster 크롭, 특강 카드 전체 노출, 한국어 제목과 2–3줄 본문, 고정 신청 CTA를 확인했다.
+- 첫 장면 조립에서 특강 카드까지 0.08초 간격으로 순차 등장하고 1.1초 뒤 최종 상태가 되는 시퀀스를 확인했다.
+- 첫 화면·마지막 화면의 두 네이버폼 링크 href/target/rel, 데스크톱·모바일 수평 오버플로 없음과 콘솔 오류 없음을 검사했다.

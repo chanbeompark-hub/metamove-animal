@@ -1,9 +1,10 @@
 import { siteContent } from '../content/siteContent'
 import { ApplyLink } from './ApplyLink'
+import { OutdoorSpecialCard } from './OutdoorSpecialCard'
 
 export function Hero() {
   return (
-    <section className="hero" id="top" aria-labelledby="hero-title">
+    <section className="hero" id="top" aria-labelledby="hero-title" aria-label="첫 화면 신청 안내">
       <div className="hero__copy">
         <p className="eyebrow"><span /> ANIMAL FLOW · FIRST FLOW</p>
         <p className="hero__question">몸을 쓰는 방식도, 배울 수 있습니다.</p>
@@ -14,6 +15,7 @@ export function Hero() {
           바닥을 지지하고, 이동하고, 회전하고, 연결하며<br className="desktop-only" />
           몸 전체를 사용하는 맨몸 움직임 클래스.
         </p>
+        <OutdoorSpecialCard compact />
         <div className="hero__actions">
           <ApplyLink>FIRST FLOW 신청하기</ApplyLink>
           <a href="#proof" className="text-link">움직임이 연결되는 방식 ↓</a>

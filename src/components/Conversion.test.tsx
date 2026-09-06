@@ -38,4 +38,21 @@ describe('FIRST FLOW conversion', () => {
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
   })
+
+  it('offers the outdoor special in the first viewport before the regular application', () => {
+    render(<App />)
+
+    const hero = screen.getByLabelText('첫 화면 신청 안내')
+    const outdoorLink = within(hero).getByRole('link', {
+      name: /서울식물원 야외 특강 신청하기/,
+    })
+    const regularLink = within(hero).getByRole('link', {
+      name: /FIRST FLOW 신청하기/,
+    })
+
+    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/FbVClEEY')
+    expect(outdoorLink).toHaveAttribute('target', '_blank')
+    expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
+    expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+  })
 })
