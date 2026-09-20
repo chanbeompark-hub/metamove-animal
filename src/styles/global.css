@@ -49,7 +49,7 @@ em { color: var(--blue); font-style: normal; }
 .site-header nav a:hover::after, .site-header nav a:focus-visible::after, .text-link:hover::after, .text-link:focus-visible::after { transform: scaleX(1); transform-origin: left; }
 .header-apply { justify-self: end; min-width: 146px; min-height: 46px !important; padding: 0 18px !important; background: transparent !important; color: var(--navy) !important; border: 1px solid var(--navy); box-shadow: none !important; }
 
-.apply-link { min-height: 62px; padding: 0 24px; display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; background: var(--blue); color: var(--white); font-weight: 800; font-size: 15px; box-shadow: 6px 6px 0 var(--navy); transition: background .18s ease, transform .18s ease, box-shadow .18s ease; }
+.apply-link { min-width: 0; min-height: 62px; padding: 0 24px; display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; background: var(--blue); color: var(--white); font-weight: 800; font-size: 15px; line-height: 1.45; text-align: left; word-break: keep-all; box-shadow: 6px 6px 0 var(--navy); transition: background .18s ease, transform .18s ease, box-shadow .18s ease; }
 .apply-link:hover { background: var(--blue-dark); transform: translate(2px, 2px); box-shadow: 4px 4px 0 var(--navy); }
 .apply-link__arrow { transition: transform .18s ease; }
 .apply-link:hover .apply-link__arrow { transform: translate(4px, -4px); }
@@ -184,6 +184,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special__date-mark { position: absolute; right: -8px; top: -30px; color: rgba(142,197,255,.12); font-size: 150px; font-weight: 900; line-height: 1; letter-spacing: -.08em; pointer-events: none; }
 .outdoor-special__eyebrow { position: relative; z-index: 1; color: var(--sky); font-size: 10px; font-weight: 800; letter-spacing: .16em; }
 .outdoor-special h3 { position: relative; z-index: 1; max-width: 420px; font-size: clamp(23px, 2.3vw, 34px); line-height: 1.25; letter-spacing: -.03em; word-break: keep-all; overflow-wrap: break-word; text-wrap: balance; }
+.outdoor-special__tagline { position: relative; z-index: 1; max-width: 37ch; color: rgba(255,255,255,.78); font-size: 14px; line-height: 1.65; word-break: keep-all; text-wrap: pretty; }
 .outdoor-special__facts { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; }
 .outdoor-special__facts li { display: flex; align-items: center; gap: 8px; }
 .outdoor-special__facts li:not(:last-child)::after { content: ''; width: 3px; height: 3px; margin-left: 8px; background: var(--sky); border-radius: 50%; }
@@ -192,10 +193,12 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special--compact { margin: 30px 0 0; padding: 18px 18px 17px; gap: 10px; grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
 .outdoor-special--compact .outdoor-special__eyebrow,
 .outdoor-special--compact h3,
+.outdoor-special--compact .outdoor-special__tagline,
 .outdoor-special--compact .outdoor-special__facts { grid-column: 1; }
 .outdoor-special--compact h3 { max-width: 330px; font-size: clamp(19px, 1.65vw, 25px); }
+.outdoor-special--compact .outdoor-special__tagline { max-width: 36ch; font-size: 12px; line-height: 1.55; }
 .outdoor-special--compact .outdoor-special__facts { gap: 5px 12px; font-size: 11px; }
-.outdoor-special--compact .outdoor-special__link { grid-column: 2; grid-row: 1 / span 3; min-width: 184px; min-height: 50px; padding: 0 16px; gap: 16px; background: var(--white); color: var(--navy); box-shadow: 4px 4px 0 var(--blue); font-size: 12px; }
+.outdoor-special--compact .outdoor-special__link { grid-column: 2; grid-row: 1 / span 4; min-width: 184px; min-height: 50px; padding: 0 16px; gap: 16px; background: var(--white); color: var(--navy); box-shadow: 4px 4px 0 var(--blue); font-size: 12px; }
 .outdoor-special--compact .outdoor-special__date-mark { top: -12px; right: 190px; font-size: 92px; }
 
 .site-footer { min-height: 270px; padding: 58px max(40px, calc((100vw - 1440px) / 2)); background: var(--blue); color: var(--white); display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 40px; }
@@ -253,7 +256,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .section-heading h2,
   .values__intro h2,
   .faq__lead h2,
-  .first-flow h2 { text-wrap: balance; word-break: keep-all; }
+  .first-flow h2 { text-wrap: balance; word-break: keep-all; overflow-wrap: break-word; }
   .desktop-only { display: none; }
   .hero__actions { margin-top: 28px; gap: 22px; }
   .hero__actions .apply-link { width: 100%; }
@@ -261,6 +264,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .hero__copy > .outdoor-special--compact { order: -1; margin: 0 0 32px; }
   .outdoor-special--compact .outdoor-special__eyebrow,
   .outdoor-special--compact h3,
+  .outdoor-special--compact .outdoor-special__tagline,
   .outdoor-special--compact .outdoor-special__facts,
   .outdoor-special--compact .outdoor-special__link { grid-column: 1 / -1; grid-row: auto; }
   .outdoor-special--compact h3 { max-width: 250px; font-size: 23px; }
@@ -269,7 +273,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .outdoor-special--compact .outdoor-special__date-mark { right: -4px; top: -12px; font-size: 104px; }
   .hero__meta { margin-top: 46px; }
   .section { padding: 92px 0; }
-  .section-heading h2, .values__intro h2, .faq__lead h2 { font-size: 42px; line-height: 1.08; }
+  .section-heading h2, .values__intro h2, .faq__lead h2 { font-size: clamp(34px, 10.8vw, 42px); line-height: 1.12; letter-spacing: -.045em; }
   .section-heading > p:last-child, .values__intro > p:last-child, .faq__lead > p:last-child { font-size: 15px; line-height: 1.75; }
   .section-heading--split { display: block; }
   .about__proof { margin-top: 48px; height: 58svh; }
@@ -314,6 +318,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .outdoor-special { margin-bottom: 18px; padding: 22px 18px; }
   .outdoor-special__date-mark { right: -4px; top: -16px; font-size: 112px; }
   .outdoor-special h3 { max-width: 280px; font-size: 25px; }
+  .outdoor-special__tagline { max-width: 30ch; font-size: 14px; line-height: 1.7; }
   .outdoor-special__facts { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 12px; }
   .outdoor-special__facts li::after { display: none; }
   .first-flow__apply .outdoor-special__link { width: 100%; min-height: 58px; padding-inline: 16px; gap: 12px; }

@@ -1,9 +1,13 @@
 export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
   outdoorSpecial: {
-    applicationUrl: 'https://naver.me/FbVClEEY',
-    title: '서울식물원 무료 야외 애니멀 특강',
-    facts: ['9월 20일(일) 오전 9시', '서울식물원', '선착순 20명', '무료'],
+    applicationUrl: 'https://form.naver.com/response/Hjm0ap3eogv',
+    dateMark: '18',
+    title: '일산호수공원 야외 애니멀 특강',
+    tagline: '커피 한 잔 값으로, 일산의 아침을 특별한 움직임으로 채워보세요.',
+    facts: ['10월 18일(일) 오전 9시', '일산호수공원', '선착순 10명', '참가비 5,000원'],
+    compactCta: '일산호수공원 야외 특강 신청하기',
+    cta: '야외 애니멀 특강 신청하기',
   },
   classFacts: [
     { label: '정원', value: '4명' },

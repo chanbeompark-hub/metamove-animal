@@ -29,11 +29,15 @@ describe('FIRST FLOW conversion', () => {
       name: /FIRST FLOW 신청하기/,
     })
 
-    expect(within(outdoorSpecial).getByText('9월 20일(일) 오전 9시')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('서울식물원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('선착순 20명')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('무료')).toBeInTheDocument()
-    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/FbVClEEY')
+    expect(within(outdoorSpecial).getByRole('heading', {
+      name: '일산호수공원 야외 애니멀 특강',
+    })).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('10월 18일(일) 오전 9시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('일산호수공원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('선착순 10명')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('참가비 5,000원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('커피 한 잔 값으로, 일산의 아침을 특별한 움직임으로 채워보세요.')).toBeInTheDocument()
+    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
@@ -44,13 +48,13 @@ describe('FIRST FLOW conversion', () => {
 
     const hero = screen.getByLabelText('첫 화면 신청 안내')
     const outdoorLink = within(hero).getByRole('link', {
-      name: /서울식물원 야외 특강 신청하기/,
+      name: /일산호수공원 야외 특강 신청하기/,
     })
     const regularLink = within(hero).getByRole('link', {
       name: /FIRST FLOW 신청하기/,
     })
 
-    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/FbVClEEY')
+    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
