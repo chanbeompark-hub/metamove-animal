@@ -30,14 +30,15 @@ describe('FIRST FLOW conversion', () => {
     })
 
     expect(within(outdoorSpecial).getByRole('heading', {
-      name: '일산호수공원 야외 애니멀 특강',
+      name: '양화한강공원 야외 애니멀 특강',
     })).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('10월 18일(일) 오전 9시')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('일산호수공원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('9월 27일(일) 오전 9시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('양화한강공원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('정확한 장소 추후 공지')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('선착순 10명')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('참가비 5,000원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('커피 한 잔 값으로, 일산의 아침을 특별한 움직임으로 채워보세요.')).toBeInTheDocument()
-    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
+    expect(within(outdoorSpecial).getByText('커피 한 잔 값으로, 한강의 아침을 특별한 움직임으로 채워보세요.')).toBeInTheDocument()
+    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/xuFtK9gx')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
@@ -48,13 +49,13 @@ describe('FIRST FLOW conversion', () => {
 
     const hero = screen.getByLabelText('첫 화면 신청 안내')
     const outdoorLink = within(hero).getByRole('link', {
-      name: /일산호수공원 야외 특강 신청하기/,
+      name: /양화한강공원 야외 특강 신청하기/,
     })
     const regularLink = within(hero).getByRole('link', {
       name: /FIRST FLOW 신청하기/,
     })
 
-    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
+    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/xuFtK9gx')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()

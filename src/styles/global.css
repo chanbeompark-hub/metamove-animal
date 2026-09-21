@@ -320,6 +320,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .outdoor-special h3 { max-width: 280px; font-size: 25px; }
   .outdoor-special__tagline { max-width: 30ch; font-size: 14px; line-height: 1.7; }
   .outdoor-special__facts { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 12px; }
+  .outdoor-special__facts li:last-child { grid-column: 1 / -1; color: var(--sky); }
   .outdoor-special__facts li::after { display: none; }
   .first-flow__apply .outdoor-special__link { width: 100%; min-height: 58px; padding-inline: 16px; gap: 12px; }
   .site-footer { min-height: 250px; padding: 46px 15px 40px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; }

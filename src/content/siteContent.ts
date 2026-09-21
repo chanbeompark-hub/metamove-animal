@@ -1,12 +1,12 @@
 export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
   outdoorSpecial: {
-    applicationUrl: 'https://form.naver.com/response/Hjm0ap3eogv',
-    dateMark: '18',
-    title: '일산호수공원 야외 애니멀 특강',
-    tagline: '커피 한 잔 값으로, 일산의 아침을 특별한 움직임으로 채워보세요.',
-    facts: ['10월 18일(일) 오전 9시', '일산호수공원', '선착순 10명', '참가비 5,000원'],
-    compactCta: '일산호수공원 야외 특강 신청하기',
+    applicationUrl: 'https://naver.me/xuFtK9gx',
+    dateMark: '27',
+    title: '양화한강공원 야외 애니멀 특강',
+    tagline: '커피 한 잔 값으로, 한강의 아침을 특별한 움직임으로 채워보세요.',
+    facts: ['9월 27일(일) 오전 9시', '양화한강공원', '선착순 10명', '참가비 5,000원', '정확한 장소 추후 공지'],
+    compactCta: '양화한강공원 야외 특강 신청하기',
     cta: '야외 애니멀 특강 신청하기',
   },
   classFacts: [
