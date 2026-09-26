@@ -30,15 +30,15 @@ describe('FIRST FLOW conversion', () => {
     })
 
     expect(within(outdoorSpecial).getByRole('heading', {
-      name: '양화한강공원 야외 애니멀 특강',
+      name: '서울식물원 야외 애니멀 특강',
     })).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('9월 27일(일) 오전 9시')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('양화한강공원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('10월 4일(일) 오후 5시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('서울식물원')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('정확한 장소 추후 공지')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('선착순 10명')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('참가비 5,000원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('커피 한 잔 값으로, 한강의 아침을 특별한 움직임으로 채워보세요.')).toBeInTheDocument()
-    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/xuFtK9gx')
+    expect(within(outdoorSpecial).getByText('커피 한 잔 값으로, 서울식물원의 가을 저녁을 특별한 움직임으로 채워보세요.')).toBeInTheDocument()
+    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/551dXrHb')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
@@ -49,13 +49,13 @@ describe('FIRST FLOW conversion', () => {
 
     const hero = screen.getByLabelText('첫 화면 신청 안내')
     const outdoorLink = within(hero).getByRole('link', {
-      name: /양화한강공원 야외 특강 신청하기/,
+      name: /서울식물원 야외 특강 신청하기/,
     })
     const regularLink = within(hero).getByRole('link', {
       name: /FIRST FLOW 신청하기/,
     })
 
-    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/xuFtK9gx')
+    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/551dXrHb')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
