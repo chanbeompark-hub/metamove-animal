@@ -1,12 +1,17 @@
 export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
   outdoorSpecial: {
-    applicationUrl: 'https://naver.me/551dXrHb',
-    dateMark: '04',
-    title: '서울식물원 야외 애니멀 특강',
-    tagline: '커피 한 잔 값으로, 서울식물원의 가을 저녁을 특별한 움직임으로 채워보세요.',
-    facts: ['10월 4일(일) 오후 5시', '서울식물원', '선착순 10명', '참가비 5,000원', '정확한 장소 추후 공지'],
-    compactCta: '서울식물원 야외 특강 신청하기',
+    applicationUrl: 'https://naver.me/GSQ16FND',
+    dateMark: '10',
+    title: '서울식물원 야외 긴급 애니멀플로우 특강',
+    tagline: '이번 주 토요일 저녁, 서울식물원 잔디마당에서 함께 움직여보세요.',
+    facts: ['10월 10일(토) 오후 5시', '서울식물원', '선착순 10명', '참가비 10,000원', '정확한 장소 · 잔디마당'],
+    locationImage: {
+      src: '/media/seoul-botanic-lawn.jpg',
+      alt: '서울식물원 잔디마당 모임 위치 지도',
+      caption: '서울식물원 잔디마당 · 모임 위치',
+    },
+    compactCta: '서울식물원 긴급 특강 신청하기',
     cta: '야외 애니멀 특강 신청하기',
   },
   classFacts: [

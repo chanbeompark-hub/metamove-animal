@@ -188,6 +188,9 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special__facts { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; }
 .outdoor-special__facts li { display: flex; align-items: center; gap: 8px; }
 .outdoor-special__facts li:not(:last-child)::after { content: ''; width: 3px; height: 3px; margin-left: 8px; background: var(--sky); border-radius: 50%; }
+.outdoor-special__location { position: relative; z-index: 1; display: grid; gap: 8px; margin: 2px 0 0; }
+.outdoor-special__location img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 52%; border: 1px solid rgba(142,197,255,.45); background: #eaf3df; }
+.outdoor-special__location figcaption { color: var(--sky); font-size: 11px; font-weight: 700; letter-spacing: .04em; }
 .first-flow__apply .outdoor-special__link { position: relative; z-index: 1; background: var(--white); color: var(--navy); box-shadow: 5px 5px 0 var(--blue); }
 .first-flow__apply .outdoor-special__link:hover { background: var(--sky); box-shadow: 3px 3px 0 var(--blue); }
 .outdoor-special--compact { margin: 30px 0 0; padding: 18px 18px 17px; gap: 10px; grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
@@ -322,6 +325,8 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .outdoor-special__facts { display: grid; grid-template-columns: 1fr 1fr; gap: 9px 12px; }
   .outdoor-special__facts li:last-child { grid-column: 1 / -1; color: var(--sky); }
   .outdoor-special__facts li::after { display: none; }
+  .outdoor-special__location { gap: 7px; }
+  .outdoor-special__location figcaption { font-size: 10px; line-height: 1.5; }
   .first-flow__apply .outdoor-special__link { width: 100%; min-height: 58px; padding-inline: 16px; gap: 12px; }
   .site-footer { min-height: 250px; padding: 46px 15px 40px; display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; }
   .site-footer div { display: block; }
