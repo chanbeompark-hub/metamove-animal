@@ -3,15 +3,15 @@ export const siteContent = {
   outdoorSpecial: {
     applicationUrl: 'https://naver.me/GSQ16FND',
     dateMark: '10',
-    title: '서울식물원 야외 긴급 애니멀플로우 특강',
-    tagline: '이번 주 토요일 저녁, 서울식물원 잔디마당에서 함께 움직여보세요.',
-    facts: ['10월 10일(토) 오후 5시', '서울식물원', '선착순 10명', '참가비 10,000원', '정확한 장소 · 잔디마당'],
+    title: '양화한강공원 선셋 애니멀 특강',
+    tagline: '토요일 선셋, 양화한강공원에서 함께 움직여보세요.',
+    facts: ['10월 10일(토) 오후 5시', '양화한강공원', '선착순 10명', '참가비 10,000원', '정확한 장소 · 축구장 인근'],
     locationImage: {
-      src: '/media/seoul-botanic-lawn.jpg',
-      alt: '서울식물원 잔디마당 모임 위치 지도',
-      caption: '서울식물원 잔디마당 · 모임 위치',
+      src: '/media/yanghwa-hangang-park.jpg',
+      alt: '양화한강공원 축구장 인근 모임 위치 지도',
+      caption: '양화한강공원 축구장 인근 · 모임 위치',
     },
-    compactCta: '서울식물원 긴급 특강 신청하기',
+    compactCta: '양화한강공원 선셋 특강 신청하기',
     cta: '야외 애니멀 특강 신청하기',
   },
   classFacts: [

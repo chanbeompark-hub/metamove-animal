@@ -30,17 +30,17 @@ describe('FIRST FLOW conversion', () => {
     })
 
     expect(within(outdoorSpecial).getByRole('heading', {
-      name: '서울식물원 야외 긴급 애니멀플로우 특강',
+      name: '양화한강공원 선셋 애니멀 특강',
     })).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('10월 10일(토) 오후 5시')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('서울식물원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('정확한 장소 · 잔디마당')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('양화한강공원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('정확한 장소 · 축구장 인근')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('선착순 10명')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('참가비 10,000원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('이번 주 토요일 저녁, 서울식물원 잔디마당에서 함께 움직여보세요.')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('토요일 선셋, 양화한강공원에서 함께 움직여보세요.')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByRole('img', {
-      name: '서울식물원 잔디마당 모임 위치 지도',
-    })).toHaveAttribute('src', '/media/seoul-botanic-lawn.jpg')
+      name: '양화한강공원 축구장 인근 모임 위치 지도',
+    })).toHaveAttribute('src', '/media/yanghwa-hangang-park.jpg')
     expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/GSQ16FND')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
@@ -52,7 +52,7 @@ describe('FIRST FLOW conversion', () => {
 
     const hero = screen.getByLabelText('첫 화면 신청 안내')
     const outdoorLink = within(hero).getByRole('link', {
-      name: /서울식물원 긴급 특강 신청하기/,
+      name: /양화한강공원 선셋 특강 신청하기/,
     })
     const regularLink = within(hero).getByRole('link', {
       name: /FIRST FLOW 신청하기/,
