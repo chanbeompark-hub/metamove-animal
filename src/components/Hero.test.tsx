@@ -10,7 +10,8 @@ describe('Hero', () => {
     expect(video).toHaveAttribute('autoplay')
     expect(video).toHaveAttribute('loop')
     expect(video).toHaveAttribute('playsinline')
-    expect(video).toHaveAttribute('poster', '/media/flow-poster.webp')
+    expect(video).toHaveAttribute('poster', '/media/flow-hero-poster.webp')
+    expect(video.querySelector('source')).toHaveAttribute('src', '/media/flow-hero-20261004.mp4')
 
     expect(
       screen.getByRole('link', { name: /FIRST FLOW 신청하기/ }),

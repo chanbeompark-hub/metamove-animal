@@ -18,15 +18,19 @@ export function WhatIsAnimalFlow() {
           하나의 움직임을 다음 움직임으로 이어갑니다.
         </p>
       </div>
-      <figure className="about__proof">
-        <img
-          src={siteContent.media.movement}
-          alt="여러 참가자가 바닥을 지지하며 이동하는 Animal Flow 수업 장면"
-          loading="lazy"
-        />
+      <figure className="about__proof about__proof--video">
+        <video
+          aria-label="애니멀플로우 야외 특강 에피소드 스케치 영상"
+          controls
+          playsInline
+          preload="metadata"
+          poster={siteContent.media.episodePoster}
+        >
+          <source src={siteContent.media.episodeVideo} type="video/mp4" />
+        </video>
         <figcaption>
-          <span>REAL CLASS · REAL MOVEMENT</span>
-          <strong>손과 발로 지지하고, 이동하고, 방향을 바꿉니다.</strong>
+          <span>OUTDOOR SPECIAL · EPISODE SKETCH</span>
+          <strong>애니멀플로우 야외 특강 에피소드 스케치</strong>
         </figcaption>
       </figure>
       <ol className="movement-sequence" aria-label="Animal Flow 움직임 순서">

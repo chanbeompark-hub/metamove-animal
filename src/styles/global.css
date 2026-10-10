@@ -86,10 +86,14 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .section-heading--split > p { padding-bottom: 10px; }
 
 .about__proof { margin-top: 76px; height: clamp(420px, 58vw, 720px); position: relative; overflow: hidden; background: var(--navy); }
-.about__proof::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(4,14,35,.82)); }
+.about__proof::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(4,14,35,.82)); pointer-events: none; }
 .about__proof img { height: 100%; object-fit: cover; object-position: center 48%; transition: transform .6s cubic-bezier(.22,1,.36,1); }
 .about__proof:hover img { transform: scale(1.025); }
 .about__proof figcaption { position: absolute; z-index: 2; left: 28px; right: 28px; bottom: 24px; display: flex; justify-content: space-between; gap: 24px; color: var(--white); font-size: 11px; letter-spacing: .08em; }
+.about__proof--video { background: #030b1b; }
+.about__proof--video::after { inset: 68% 0 0; }
+.about__proof--video video { height: 100%; object-fit: contain; background: #030b1b; }
+.about__proof--video figcaption { bottom: 62px; pointer-events: none; }
 
 .movement-sequence { margin-top: 78px; display: grid; grid-template-columns: repeat(4, 1fr) 1.38fr; border-top: 1px solid var(--navy); border-bottom: 1px solid var(--navy); }
 .movement-sequence li { min-height: 250px; padding: 22px 20px 26px; border-right: 1px solid var(--navy); display: flex; flex-direction: column; position: relative; transition: background .22s ease, color .22s ease; }
@@ -283,6 +287,8 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .about__proof img { object-position: 48% center; }
   .about__proof figcaption { left: 16px; right: 16px; bottom: 16px; display: block; }
   .about__proof figcaption strong { display: block; margin-top: 8px; line-height: 1.5; letter-spacing: 0; }
+  .about__proof--video { height: min(160vw, 72svh); min-height: 480px; max-height: 680px; }
+  .about__proof--video figcaption { bottom: 58px; }
   .movement-sequence { margin-top: 48px; grid-template-columns: 1fr; }
   .movement-sequence li { min-height: 170px; border-right: 0; border-bottom: 1px solid var(--navy); }
   .movement-sequence__result { grid-column: auto; }
@@ -350,5 +356,5 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .flow-rail__line { transform: scale(1); }
   .flow-rail__step { opacity: 1; transform: none; }
   .hero__media video { display: none; }
-  .hero__media { background: var(--navy) url('/media/flow-poster.webp') center 55% / cover no-repeat; }
+  .hero__media { background: var(--navy) url('/media/flow-hero-poster.webp') center 55% / cover no-repeat; }
 }

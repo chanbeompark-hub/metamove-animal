@@ -40,8 +40,10 @@ export const siteContent = {
     { question: '영상이 너무 어려워 보여요.', answer: '처음부터 저렇게 하지 않습니다. 동작을 나누어 익힌 뒤 연결합니다.' },
   ],
   media: {
-    video: '/media/flow-hero.mp4',
-    poster: '/media/flow-poster.webp',
+    video: '/media/flow-hero-20261004.mp4',
+    poster: '/media/flow-hero-poster.webp',
+    episodeVideo: '/media/outdoor-episode-sketch.mp4',
+    episodePoster: '/media/outdoor-episode-poster.webp',
     beast: '/media/beast.webp',
     control: '/media/control.webp',
     movement: '/media/movement.webp',

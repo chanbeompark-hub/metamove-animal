@@ -18,11 +18,17 @@ describe('learning narrative', () => {
     expect(within(learning).getByText('Transition')).toBeInTheDocument()
   })
 
-  it('uses a real class image as the first proof after the hero', () => {
+  it('uses the outdoor-class episode sketch as the first proof after the hero', () => {
     const { container } = render(<App />)
     const proof = container.querySelector('#proof')
 
     expect(proof).not.toBeNull()
-    expect(within(proof as HTMLElement).getByRole('img', { name: /Animal Flow 수업/ })).toBeInTheDocument()
+    const video = within(proof as HTMLElement).getByLabelText('애니멀플로우 야외 특강 에피소드 스케치 영상')
+    expect(video).toHaveAttribute('controls')
+    expect(video).toHaveAttribute('playsinline')
+    expect(video).toHaveAttribute('preload', 'metadata')
+    expect(video).toHaveAttribute('poster', '/media/outdoor-episode-poster.webp')
+    expect(video.querySelector('source')).toHaveAttribute('src', '/media/outdoor-episode-sketch.mp4')
+    expect(within(proof as HTMLElement).getByText('애니멀플로우 야외 특강 에피소드 스케치')).toBeInTheDocument()
   })
 })
