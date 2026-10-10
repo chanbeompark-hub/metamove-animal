@@ -30,18 +30,16 @@ describe('FIRST FLOW conversion', () => {
     })
 
     expect(within(outdoorSpecial).getByRole('heading', {
-      name: '양화한강공원 선셋 애니멀 특강',
+      name: '일산호수공원 애니멀 특강',
     })).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('10월 10일(토) 오후 5시')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('양화한강공원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('정확한 장소 · 축구장 인근')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('10월 18일(일) 오전 9시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('일산호수공원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('정확한 위치 · 당일 전달')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('선착순 10명')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('참가비 10,000원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('토요일 선셋, 양화한강공원에서 함께 움직여보세요.')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByRole('img', {
-      name: '양화한강공원 축구장 인근 모임 위치 지도',
-    })).toHaveAttribute('src', '/media/yanghwa-hangang-park.jpg')
-    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/GSQ16FND')
+    expect(within(outdoorSpecial).getByText('참가비 5,000원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('추가 모집! 단체 그룹 특강. 커피값으로 특강, 개꿀이잖아?')).toBeInTheDocument()
+    expect(within(outdoorSpecial).queryByRole('img')).not.toBeInTheDocument()
+    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
@@ -52,13 +50,13 @@ describe('FIRST FLOW conversion', () => {
 
     const hero = screen.getByLabelText('첫 화면 신청 안내')
     const outdoorLink = within(hero).getByRole('link', {
-      name: /양화한강공원 선셋 특강 신청하기/,
+      name: /일산호수공원 특강 신청하기/,
     })
     const regularLink = within(hero).getByRole('link', {
       name: /FIRST FLOW 신청하기/,
     })
 
-    expect(outdoorLink).toHaveAttribute('href', 'https://naver.me/GSQ16FND')
+    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()

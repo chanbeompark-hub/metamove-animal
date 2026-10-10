@@ -1,17 +1,19 @@
+type LocationImage = {
+  src: string
+  alt: string
+  caption: string
+}
+
 export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
   outdoorSpecial: {
-    applicationUrl: 'https://naver.me/GSQ16FND',
-    dateMark: '10',
-    title: '양화한강공원 선셋 애니멀 특강',
-    tagline: '토요일 선셋, 양화한강공원에서 함께 움직여보세요.',
-    facts: ['10월 10일(토) 오후 5시', '양화한강공원', '선착순 10명', '참가비 10,000원', '정확한 장소 · 축구장 인근'],
-    locationImage: {
-      src: '/media/yanghwa-hangang-park.jpg',
-      alt: '양화한강공원 축구장 인근 모임 위치 지도',
-      caption: '양화한강공원 축구장 인근 · 모임 위치',
-    },
-    compactCta: '양화한강공원 선셋 특강 신청하기',
+    applicationUrl: 'https://form.naver.com/response/Hjm0ap3eogv',
+    dateMark: '18',
+    title: '일산호수공원 애니멀 특강',
+    tagline: '추가 모집! 단체 그룹 특강. 커피값으로 특강, 개꿀이잖아?',
+    facts: ['10월 18일(일) 오전 9시', '일산호수공원', '선착순 10명', '참가비 5,000원', '정확한 위치 · 당일 전달'],
+    locationImage: null as LocationImage | null,
+    compactCta: '일산호수공원 특강 신청하기',
     cta: '야외 애니멀 특강 신청하기',
   },
   classFacts: [

@@ -20,7 +20,7 @@ export function OutdoorSpecialCard({ compact = false }: OutdoorSpecialCardProps)
       <ul className="outdoor-special__facts" aria-label="야외 특강 정보">
         {siteContent.outdoorSpecial.facts.map((fact) => <li key={fact}>{fact}</li>)}
       </ul>
-      {!compact && (
+      {!compact && siteContent.outdoorSpecial.locationImage && (
         <figure className="outdoor-special__location">
           <img
             src={siteContent.outdoorSpecial.locationImage.src}
