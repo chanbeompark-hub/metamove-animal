@@ -34,7 +34,7 @@ describe('FIRST FLOW conversion', () => {
     })).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('10월 18일(일) 오전 9시')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('지도에서 빨간 핀으로 표시된 집결 장소입니다.')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('선착순 10명')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('총 플로우 진행인원 25~30명')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('참가비 5,000원')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('추가 모집! 단체 그룹 특강. 커피값으로 특강, 개꿀이잖아?')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByRole('img', {

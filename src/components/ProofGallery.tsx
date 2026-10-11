@@ -17,9 +17,9 @@ export function ProofGallery() {
         </div>
         <p>처음부터 완성된 동작을 요구하지 않습니다. 지지하고, 시도하고, 지도받고, 함께 연결합니다.</p>
       </div>
-      <div className="proof-grid">
+      <div className="proof-grid" role="list" aria-label="REAL FLOW MOMENTS 사진">
         {moments.map((moment) => (
-          <figure key={moment.index}>
+          <figure key={moment.index} role="listitem">
             <img src={moment.src} alt={moment.alt} loading="lazy" />
             <figcaption><span>{moment.index}</span><strong>{moment.title}</strong></figcaption>
           </figure>

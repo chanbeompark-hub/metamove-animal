@@ -31,4 +31,11 @@ describe('learning narrative', () => {
     expect(video.querySelector('source')).toHaveAttribute('src', '/media/outdoor-episode-sketch.mp4')
     expect(within(proof as HTMLElement).getByText('애니멀플로우 야외 특강 에피소드 스케치')).toBeInTheDocument()
   })
+
+  it('presents the real flow photos as one ordered gallery', () => {
+    render(<App />)
+
+    const gallery = screen.getByRole('list', { name: 'REAL FLOW MOMENTS 사진' })
+    expect(within(gallery).getAllByRole('listitem')).toHaveLength(4)
+  })
 })
