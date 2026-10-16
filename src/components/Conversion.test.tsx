@@ -30,13 +30,13 @@ describe('FIRST FLOW conversion', () => {
     })
 
     expect(within(outdoorSpecial).getByRole('heading', {
-      name: '일산호수공원 애니멀 특강',
+      name: '일산호수공원 선셋 애니멀 특강',
     })).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('10월 18일(일) 오전 9시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('10월 17일(토) 오후 5시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('비 예보로 일정이 하루 앞당겨졌습니다. 토요일 오후 5시, 선셋 플로우로 만나요.')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('지도에서 빨간 핀으로 표시된 집결 장소입니다.')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('총 플로우 진행인원 25~30명')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('참가비 5,000원')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('추가 모집! 단체 그룹 특강. 커피값으로 특강, 개꿀이잖아?')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByRole('img', {
       name: '일산호수공원 2공영주차장 앞 호수 잔디 위치 지도',
     })).toHaveAttribute('src', '/media/ilsan-lake-park-map.webp')
@@ -58,6 +58,10 @@ describe('FIRST FLOW conversion', () => {
       name: /FIRST FLOW 신청하기/,
     })
 
+    expect(within(hero).getByRole('heading', {
+      name: '일산호수공원 선셋 애니멀 특강',
+    })).toBeInTheDocument()
+    expect(within(hero).getByText('10월 17일(토) 오후 5시')).toBeInTheDocument()
     expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')

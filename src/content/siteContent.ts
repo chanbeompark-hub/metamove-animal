@@ -8,10 +8,10 @@ export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
   outdoorSpecial: {
     applicationUrl: 'https://form.naver.com/response/Hjm0ap3eogv',
-    dateMark: '18',
-    title: '일산호수공원 애니멀 특강',
-    tagline: '추가 모집! 단체 그룹 특강. 커피값으로 특강, 개꿀이잖아?',
-    facts: ['10월 18일(일) 오전 9시', '일산호수공원 2공영주차장 앞 호수 잔디', '총 플로우 진행인원 25~30명', '참가비 5,000원'],
+    dateMark: '17',
+    title: '일산호수공원 선셋 애니멀 특강',
+    tagline: '비 예보로 일정이 하루 앞당겨졌습니다. 토요일 오후 5시, 선셋 플로우로 만나요.',
+    facts: ['10월 17일(토) 오후 5시', '일산호수공원 2공영주차장 앞 호수 잔디', '총 플로우 진행인원 25~30명', '참가비 5,000원'],
     locationImage: {
       src: '/media/ilsan-lake-park-map.webp',
       alt: '일산호수공원 2공영주차장 앞 호수 잔디 위치 지도',
