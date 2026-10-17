@@ -21,27 +21,29 @@ describe('FIRST FLOW conversion', () => {
     render(<App />)
 
     const firstFlowSection = screen.getByLabelText('FIRST FLOW 신청 안내')
-    const outdoorSpecial = within(firstFlowSection).getByLabelText('야외 특강 안내')
+    const outdoorSpecial = within(firstFlowSection).getByLabelText('EP6 특강 안내')
     const outdoorLink = within(outdoorSpecial).getByRole('link', {
-      name: /야외 애니멀 특강 신청하기/,
+      name: /EP6 강남 알베르 신청하기/,
     })
     const regularLink = within(firstFlowSection).getByRole('link', {
       name: /FIRST FLOW 신청하기/,
     })
 
     expect(within(outdoorSpecial).getByRole('heading', {
-      name: '일산호수공원 선셋 애니멀 특강',
+      name: 'EP6. 애니멀플로우 IN 강남 알베르',
     })).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('10월 17일(토) 오후 5시')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('비 예보로 일정이 하루 앞당겨졌습니다. 토요일 오후 5시, 선셋 플로우로 만나요.')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('지도에서 빨간 핀으로 표시된 집결 장소입니다.')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('총 플로우 진행인원 25~30명')).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('참가비 5,000원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('10월 29일(목) 오후 7시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('실내에서 단체 플로우 군무를 만들어봐요. 퇴근 후 몸과 정신을 가다듬는 시간.')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('총 플로우 진행인원 30명 마감')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('참가비 25,000원')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('50분 플로우')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('50분 티타임')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('플로우 진행 시간은 조금 늘어날 수 있습니다.')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByRole('img', {
-      name: '일산호수공원 2공영주차장 앞 호수 잔디 위치 지도',
-    })).toHaveAttribute('src', '/media/ilsan-lake-park-map.webp')
-    expect(within(outdoorSpecial).getByText('일산호수공원 2공영주차장 앞 호수 잔디')).toBeInTheDocument()
-    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
+      name: '애니멀플로우 EP6가 진행되는 강남 알베르 실내 공간',
+    })).toHaveAttribute('src', '/media/alver-gangnam.png')
+    expect(within(outdoorSpecial).getByText('서울 강남구 강남대로102길 34 ALVER')).toBeInTheDocument()
+    expect(outdoorLink).toHaveAttribute('href', 'https://docs.google.com/forms/d/e/1FAIpQLSe1tfpfMR02_oT4wrRdI5KeDourwzjmKbyE-gnOJyjIOBDM9Q/viewform')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
@@ -52,17 +54,19 @@ describe('FIRST FLOW conversion', () => {
 
     const hero = screen.getByLabelText('첫 화면 신청 안내')
     const outdoorLink = within(hero).getByRole('link', {
-      name: /일산호수공원 특강 신청하기/,
+      name: /EP6 강남 알베르 신청하기/,
     })
     const regularLink = within(hero).getByRole('link', {
       name: /FIRST FLOW 신청하기/,
     })
 
     expect(within(hero).getByRole('heading', {
-      name: '일산호수공원 선셋 애니멀 특강',
+      name: 'EP6. 애니멀플로우 IN 강남 알베르',
     })).toBeInTheDocument()
-    expect(within(hero).getByText('10월 17일(토) 오후 5시')).toBeInTheDocument()
-    expect(outdoorLink).toHaveAttribute('href', 'https://form.naver.com/response/Hjm0ap3eogv')
+    expect(within(hero).getByText('10월 29일(목) 오후 7시')).toBeInTheDocument()
+    expect(within(hero).getByText('50분 플로우')).toBeInTheDocument()
+    expect(within(hero).getByText('50분 티타임')).toBeInTheDocument()
+    expect(outdoorLink).toHaveAttribute('href', 'https://docs.google.com/forms/d/e/1FAIpQLSe1tfpfMR02_oT4wrRdI5KeDourwzjmKbyE-gnOJyjIOBDM9Q/viewform')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
     expect(outdoorLink.compareDocumentPosition(regularLink) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()

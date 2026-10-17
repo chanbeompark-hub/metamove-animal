@@ -2,7 +2,7 @@
 
 ## Product job
 
-Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하고, 첫 화면 또는 마지막 화면에서 정규 `FIRST FLOW` 체험을 신청하거나 기간 한정 야외 특강을 선택한다.
+Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하고, 첫 화면 또는 마지막 화면에서 정규 `FIRST FLOW` 체험을 신청하거나 기간 한정 EP6 단체 세션을 선택한다.
 
 ## Direction
 
@@ -13,7 +13,7 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 - Immutable identity: `ANIMAL FLOW`, `FIRST FLOW`, 메타무브짐 PT 상동역점, 4인 소규모, BEGINNER, 약 50분, 무료 체험.
 - Repeatable shapes/materials: 바닥을 암시하는 수평선, 동작을 잇는 궤적선, 프레임 밖으로 이어지는 큰 숫자와 단계 표기.
 - Existing inconsistencies to remove: 일반적인 운동 효과 나열, 과도한 카드 반복, 근거 없는 후기·수치·효능 주장.
-- Media provenance: 사용자가 제공한 MP4·수업 사진과 `애니멀플로우 2차 일산호수공원 장소.webp` 위치 지도만 사용한다. 외부 스톡 사진과 타 브랜드 로고를 새로 추가하지 않는다.
+- Media provenance: 사용자가 제공한 MP4·수업 사진과 `KakaoTalk_20261014_175333241.png` 강남 알베르 공간 사진만 사용한다. 외부 스톡 사진과 타 브랜드 로고를 새로 추가하지 않는다.
 
 ## Reference evidence
 
@@ -35,10 +35,10 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 
 | Reference evidence | Extracted principle | Local component | Motion/state | Mobile translation | Acceptance evidence |
 |---|---|---|---|---|---|
-| Slow Run Club 데스크톱 히어로 | 한 화면에 질문·약속·미디어·두 신청 선택지 배치 | `Hero`, `OutdoorSpecialCard` | 영상 페이드가 아니라 타이포·선·CTA가 순서대로 조립 | 영상 우선 배치, 특강 안내 압축, 본문 2–3줄 호흡, 하단 고정 CTA | 데스크톱/320·360·390·430px 첫 화면 캡처와 두 폼 링크 검사 |
+| Slow Run Club 데스크톱 히어로 | 한 화면에 질문·약속·미디어·두 신청 선택지 배치 | `Hero`, `OutdoorSpecialCard` | 영상 페이드가 아니라 타이포·선·CTA가 순서대로 조립 | 영상 우선 배치, EP6 안내 압축, 본문 2–3줄 호흡, 하단 고정 CTA | 데스크톱/320·360·390·430px 첫 화면 캡처와 두 폼 링크 검사 |
 | Slow Run Club 원칙 목록 | 번호와 짧은 설명으로 철학 전달 | `FlowRail` | MOVE→CONTROL→CONNECT→FLOW 연결선 진행 | 가로 카드가 아닌 세로 레일로 전환 | 데스크톱에서 4개 원과 파란 연결선 전개 확인 |
 | Slow Run Club 진행 순서 | 방문자가 다음 단계를 예측 | `LearningPath` | 현재 단계 강조와 이미지 크롭 변화 | 스와이프가 아닌 읽기 순서형 4단계 | 데스크톱/모바일 순서 확인 |
-| Slow Run Club 마지막 신청 영역 | 결정 정보·실제 모임 위치·CTA를 한곳에 압축 | `FirstFlowCTA`, `OutdoorSpecialCard` | 기간 한정 특강과 정규 체험 CTA hover/focus 및 외부 링크 피드백 | 특강 정보를 세로로 재배열하고 세로형 위치 지도를 전체 너비로 표시하며 두 CTA 모두 전체 폭 유지 | 마지막 섹션 캡처, 지도 가독성, 두 폼 링크 검사 |
+| Slow Run Club 마지막 신청 영역 | 결정 정보·실제 공간·진행 순서·CTA를 한곳에 압축 | `FirstFlowCTA`, `OutdoorSpecialCard` | EP6와 정규 체험 CTA hover/focus 및 외부 링크 피드백 | EP6 정보를 세로로 재배열하고 공간 사진을 16:9 전체 너비로 표시하며 두 CTA 모두 전체 폭 유지 | 마지막 섹션 캡처, 공간 사진 크롭, 두 폼 링크 검사 |
 | 사용자 제공 MP4/JPG | 주장 대신 실제 움직임과 지도 장면 제시 | `Hero`, `WhatIsAnimalFlow`, `ProofGallery` | 자동재생·반복·무음·inline, 사진 hover crop | REAL FLOW 사진은 1열로 전환하고 4:3 비율로 겹침 없이 노출 | MP4 currentSrc·재생 상태와 320·360·390·430px 사진 배치 확인 |
 
 ## Signature composition and component
@@ -73,7 +73,7 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 2. Promise: 내 몸으로 새로운 움직임을 배워보세요.
 3. Proof: 손과 발로 바닥을 지지하고, 이동하고, 회전하고, 연결하는 실제 Flow 영상과 수업 사진.
 4. Choice: Beast Position → Traveling → Transition → FLOW.
-5. Action: 기간 한정 야외 특강 또는 정규 FIRST FLOW 신청하기.
+5. Action: 기간 한정 EP6 강남 알베르 세션 또는 정규 FIRST FLOW 신청하기.
 
 ## Screen priorities
 
@@ -84,10 +84,11 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 ## Behavior that must remain unchanged
 
 - 첫 화면과 마지막 화면의 정규 신청 버튼은 모두 `https://naver.me/xsZWHr8t`을 새 창으로 연다.
-- 첫 화면과 마지막 화면의 야외 특강 버튼은 `https://form.naver.com/response/Hjm0ap3eogv`를 새 창으로 열며 정규 `FIRST FLOW` 버튼보다 먼저 보인다.
-- 야외 특강의 확인된 정보는 `10월 17일(토) 오후 5시`, `일산호수공원 2공영주차장 앞 호수 잔디`, `총 플로우 진행인원 25~30명`, `참가비 5,000원`이다.
-- 카드의 긴급 안내 문구는 `비 예보로 일정이 하루 앞당겨졌습니다. 토요일 오후 5시, 선셋 플로우로 만나요.`이며 일자 변경을 가장 먼저 인지할 수 있게 사실 정보와 시각적으로 분리한다.
-- 첫 화면의 압축 카드에는 장소를 텍스트로 표시하고, 마지막 신청 카드에는 사용자가 제공한 일산호수공원 위치 지도를 함께 표시한다.
+- 첫 화면과 마지막 화면의 EP6 버튼은 사용자가 제공한 Google 설문을 새 창으로 열며 정규 `FIRST FLOW` 버튼보다 먼저 보인다.
+- EP6의 확인된 정보는 `10월 29일(목) 오후 7시`, `서울 강남구 강남대로102길 34 ALVER`, `총 플로우 진행인원 30명 마감`, `참가비 25,000원`이다.
+- 핵심 문구는 `실내에서 단체 플로우 군무를 만들어봐요. 퇴근 후 몸과 정신을 가다듬는 시간.`이며 두 문장 호흡을 모바일에서도 보존한다.
+- 진행 순서는 `50분 플로우`와 `50분 티타임`이며 `플로우 진행 시간은 조금 늘어날 수 있습니다.` 안내를 사실 정보와 분리한다.
+- 첫 화면의 압축 카드에는 진행 순서를 포함한 핵심 정보를 표시하고, 마지막 신청 카드에는 사용자가 제공한 강남 알베르 실내 공간 사진을 16:9로 표시한다.
 - 외부 폼 연결에는 `noopener noreferrer`를 적용한다.
 - 사용자가 제공한 문구의 프로그램 정보와 위치를 임의로 변경하지 않는다.
 - 영상 재생이 불가능할 경우 사용자 제공 사진을 poster/fallback으로 표시한다.
@@ -109,6 +110,6 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 ## Verification captures
 
 - 데스크톱 첫 화면, 실제 움직임 증거, 4열 FlowRail, 짙은 학습 경로, 마지막 신청 화면을 실제 브라우저에서 확인했다.
-- 320/360/390/430px 첫 화면에서 poster 크롭, 특강 카드 전체 노출, 한국어 제목과 2–3줄 본문, 고정 신청 CTA를 확인했다.
-- 첫 장면 조립에서 특강 카드까지 0.08초 간격으로 순차 등장하고 1.1초 뒤 최종 상태가 되는 시퀀스를 확인했다.
-- 첫 화면·마지막 화면의 두 네이버폼 링크 href/target/rel, 데스크톱·모바일 수평 오버플로 없음과 콘솔 오류 없음을 검사했다.
+- 320/360/390/430px 첫 화면에서 poster 크롭, EP6 카드 제목·두 문장·진행 순서, 항목별 한 줄 정보, 고정 신청 CTA를 확인했다.
+- 첫 장면 조립에서 EP6 카드까지 0.08초 간격으로 순차 등장하고 1.1초 뒤 최종 상태가 되는 시퀀스를 확인했다.
+- 첫 화면·마지막 화면의 Google 설문 링크 href/target/rel, 1672×941 알베르 공간 사진 로드, 데스크톱·모바일 수평 오버플로 없음과 콘솔 오류 없음을 검사했다.

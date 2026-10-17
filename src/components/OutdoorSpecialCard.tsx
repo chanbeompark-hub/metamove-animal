@@ -9,17 +9,26 @@ export function OutdoorSpecialCard({ compact = false }: OutdoorSpecialCardProps)
   return (
     <aside
       className={`outdoor-special${compact ? ' outdoor-special--compact' : ''}`}
-      aria-label="야외 특강 안내"
+      aria-label={siteContent.outdoorSpecial.ariaLabel}
     >
       <span className="outdoor-special__date-mark" aria-hidden="true">
         {siteContent.outdoorSpecial.dateMark}
       </span>
-      <p className="outdoor-special__eyebrow">SPECIAL OUTDOOR CLASS</p>
+      <p className="outdoor-special__eyebrow">{siteContent.outdoorSpecial.eyebrow}</p>
       <h3>{siteContent.outdoorSpecial.title}</h3>
       <p className="outdoor-special__tagline">{siteContent.outdoorSpecial.tagline}</p>
-      <ul className="outdoor-special__facts" aria-label="야외 특강 정보">
+      <ul className="outdoor-special__facts" aria-label="EP6 특강 정보">
         {siteContent.outdoorSpecial.facts.map((fact) => <li key={fact}>{fact}</li>)}
       </ul>
+      <div className="outdoor-special__program" aria-label="EP6 진행 시간">
+        <p>PROGRAM</p>
+        <ol>
+          {siteContent.outdoorSpecial.program.map((item) => <li key={item}>{item}</li>)}
+        </ol>
+      </div>
+      {!compact && (
+        <p className="outdoor-special__note">{siteContent.outdoorSpecial.programNote}</p>
+      )}
       {!compact && siteContent.outdoorSpecial.locationImage && (
         <figure className="outdoor-special__location">
           <img
