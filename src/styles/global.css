@@ -188,6 +188,10 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special__facts { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; }
 .outdoor-special__facts li { display: flex; align-items: center; gap: 8px; }
 .outdoor-special__facts li:not(:last-child)::after { content: ''; width: 3px; height: 3px; margin-left: 8px; background: var(--sky); border-radius: 50%; }
+.outdoor-special__benefit { position: relative; z-index: 1; display: grid; gap: 5px; padding: 14px 16px; background: rgba(19,93,255,.2); border-left: 3px solid var(--sky); }
+.outdoor-special__benefit p { color: var(--sky); font-size: 9px; font-weight: 800; letter-spacing: .1em; }
+.outdoor-special__benefit strong { max-width: 44ch; font-size: 13px; line-height: 1.55; letter-spacing: -.01em; word-break: keep-all; text-wrap: pretty; }
+.outdoor-special__benefit span { color: rgba(255,255,255,.7); font-size: 11px; line-height: 1.5; }
 .outdoor-special__program { position: relative; z-index: 1; display: flex; align-items: center; gap: 18px; padding: 13px 0; border-block: 1px solid rgba(142,197,255,.26); }
 .outdoor-special__program > p { color: var(--sky); font-size: 9px; font-weight: 800; letter-spacing: .16em; }
 .outdoor-special__program ol { display: flex; align-items: center; gap: 12px; font-size: 12px; font-weight: 700; }
@@ -204,14 +208,18 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special--compact h3,
 .outdoor-special--compact .outdoor-special__tagline,
 .outdoor-special--compact .outdoor-special__facts,
+.outdoor-special--compact .outdoor-special__benefit,
 .outdoor-special--compact .outdoor-special__program { grid-column: 1; }
 .outdoor-special--compact h3 { max-width: 330px; font-size: clamp(19px, 1.65vw, 25px); }
 .outdoor-special--compact .outdoor-special__tagline { max-width: 36ch; font-size: 12px; line-height: 1.55; }
 .outdoor-special--compact .outdoor-special__facts { gap: 5px 12px; font-size: 11px; }
+.outdoor-special--compact .outdoor-special__benefit { gap: 3px; padding: 10px 12px; }
+.outdoor-special--compact .outdoor-special__benefit strong { font-size: 11px; line-height: 1.45; }
+.outdoor-special--compact .outdoor-special__benefit span { font-size: 10px; }
 .outdoor-special--compact .outdoor-special__program { padding: 9px 0; gap: 10px; }
 .outdoor-special--compact .outdoor-special__program ol { gap: 8px; font-size: 10px; }
 .outdoor-special--compact .outdoor-special__program li { gap: 8px; }
-.outdoor-special--compact .outdoor-special__link { grid-column: 2; grid-row: 1 / span 5; min-width: 184px; min-height: 50px; padding: 0 16px; gap: 16px; background: var(--white); color: var(--navy); box-shadow: 4px 4px 0 var(--blue); font-size: 12px; }
+.outdoor-special--compact .outdoor-special__link { grid-column: 2; grid-row: 1 / span 6; min-width: 184px; min-height: 50px; padding: 0 16px; gap: 16px; background: var(--white); color: var(--navy); box-shadow: 4px 4px 0 var(--blue); font-size: 12px; }
 .outdoor-special--compact .outdoor-special__date-mark { top: -12px; right: 190px; font-size: 92px; }
 
 .site-footer { min-height: 270px; padding: 58px max(40px, calc((100vw - 1440px) / 2)); background: var(--blue); color: var(--white); display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 40px; }
@@ -278,6 +286,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
   .outdoor-special--compact h3,
   .outdoor-special--compact .outdoor-special__tagline,
   .outdoor-special--compact .outdoor-special__facts,
+  .outdoor-special--compact .outdoor-special__benefit,
   .outdoor-special--compact .outdoor-special__program,
   .outdoor-special--compact .outdoor-special__link { grid-column: 1 / -1; grid-row: auto; }
   .outdoor-special--compact h3 { max-width: 250px; font-size: 23px; }
