@@ -43,6 +43,7 @@ describe('FIRST FLOW conversion', () => {
       name: '애니멀플로우 EP6가 진행되는 강남 알베르 실내 공간',
     })).toHaveAttribute('src', '/media/alver-gangnam.png')
     expect(within(outdoorSpecial).getByText('서울 강남구 강남대로102길 34 ALVER')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('커뮤니티 : 현온')).toBeInTheDocument()
     expect(outdoorLink).toHaveAttribute('href', 'https://docs.google.com/forms/d/e/1FAIpQLSe1tfpfMR02_oT4wrRdI5KeDourwzjmKbyE-gnOJyjIOBDM9Q/viewform')
     expect(outdoorLink).toHaveAttribute('target', '_blank')
     expect(outdoorLink).toHaveAttribute('rel', 'noopener noreferrer')
@@ -64,6 +65,7 @@ describe('FIRST FLOW conversion', () => {
       name: 'EP6. 애니멀플로우 IN 강남 알베르',
     })).toBeInTheDocument()
     expect(within(hero).getByText('10월 29일(목) 오후 7시')).toBeInTheDocument()
+    expect(within(hero).getByText('커뮤니티 : 현온')).toBeInTheDocument()
     expect(within(hero).getByText('50분 플로우')).toBeInTheDocument()
     expect(within(hero).getByText('50분 티타임')).toBeInTheDocument()
     expect(outdoorLink).toHaveAttribute('href', 'https://docs.google.com/forms/d/e/1FAIpQLSe1tfpfMR02_oT4wrRdI5KeDourwzjmKbyE-gnOJyjIOBDM9Q/viewform')
