@@ -73,7 +73,7 @@ Animal Flow 입문자가 프로그램의 정체성과 학습 과정을 이해하
 2. Promise: 내 몸으로 새로운 움직임을 배워보세요.
 3. Proof: 손과 발로 바닥을 지지하고, 이동하고, 회전하고, 연결하는 실제 Flow 영상과 수업 사진.
 4. Choice: Beast Position → Traveling → Transition → FLOW.
-5. Action: 기간 한정 EP6 강남 알베르 세션 또는 정규 FIRST FLOW 신청하기.
+5. Action: 기간 한정 EP6 강남 알베르 세션 또는 정규 ADVANCE FLOW 그룹 특강 신청하기.
 
 ## Screen priorities
 

@@ -36,7 +36,7 @@ export function FirstFlowCTA() {
         <div className="first-flow__apply">
           <OutdoorSpecialCard />
           <span>무료 체험 클래스</span>
-          <ApplyLink>FIRST FLOW 신청하기</ApplyLink>
+          <ApplyLink>{siteContent.applicationCta}</ApplyLink>
           <small>네이버폼이 새 창에서 열립니다.</small>
         </div>
       </div>

@@ -17,7 +17,7 @@ export function Hero() {
         </p>
         <OutdoorSpecialCard compact />
         <div className="hero__actions">
-          <ApplyLink>FIRST FLOW 신청하기</ApplyLink>
+          <ApplyLink>{siteContent.applicationCta}</ApplyLink>
           <a href="#proof" className="text-link">움직임이 연결되는 방식 ↓</a>
         </div>
         <div className="hero__meta" aria-label="클래스 요약">

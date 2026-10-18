@@ -14,7 +14,7 @@ describe('FIRST FLOW conversion', () => {
     expect(within(classInfo).getByText('BEGINNER')).toBeInTheDocument()
     expect(within(classInfo).getByText('약 50분')).toBeInTheDocument()
     expect(within(classInfo).getByText('메타무브짐 PT 상동역점')).toBeInTheDocument()
-    expect(screen.getAllByRole('link', { name: /FIRST FLOW 신청하기/ }).length).toBeGreaterThanOrEqual(2)
+    expect(screen.getAllByRole('link', { name: /ADVANCE FLOW 그룹 특강 신청하기/ })).toHaveLength(3)
   })
 
   it('offers the dated outdoor special before the regular FIRST FLOW application', () => {
@@ -26,7 +26,7 @@ describe('FIRST FLOW conversion', () => {
       name: /EP6 강남 알베르 신청하기/,
     })
     const regularLink = within(firstFlowSection).getByRole('link', {
-      name: /FIRST FLOW 신청하기/,
+      name: /ADVANCE FLOW 그룹 특강 신청하기/,
     })
 
     expect(within(outdoorSpecial).getByRole('heading', {
@@ -61,7 +61,7 @@ describe('FIRST FLOW conversion', () => {
       name: /EP6 강남 알베르 신청하기/,
     })
     const regularLink = within(hero).getByRole('link', {
-      name: /FIRST FLOW 신청하기/,
+      name: /ADVANCE FLOW 그룹 특강 신청하기/,
     })
 
     expect(within(hero).getByRole('heading', {

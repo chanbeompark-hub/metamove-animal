@@ -6,6 +6,7 @@ type LocationImage = {
 
 export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
+  applicationCta: 'ADVANCE FLOW 그룹 특강 신청하기',
   outdoorSpecial: {
     applicationUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSe1tfpfMR02_oT4wrRdI5KeDourwzjmKbyE-gnOJyjIOBDM9Q/viewform',
     ariaLabel: 'EP6 특강 안내',

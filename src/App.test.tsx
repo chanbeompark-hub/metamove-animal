@@ -11,9 +11,9 @@ describe('application shell', () => {
     ).toBeInTheDocument()
 
     const links = screen.getAllByRole('link', {
-      name: /FIRST FLOW 신청하기/,
+      name: /ADVANCE FLOW 그룹 특강 신청하기/,
     })
-    expect(links.length).toBeGreaterThanOrEqual(2)
+    expect(links).toHaveLength(3)
 
     links.forEach((link) => {
       expect(link).toHaveAttribute('href', 'https://naver.me/xsZWHr8t')

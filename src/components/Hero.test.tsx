@@ -14,7 +14,7 @@ describe('Hero', () => {
     expect(video.querySelector('source')).toHaveAttribute('src', '/media/flow-hero-20261004.mp4')
 
     expect(
-      screen.getByRole('link', { name: /FIRST FLOW 신청하기/ }),
+      screen.getByRole('link', { name: /ADVANCE FLOW 그룹 특강 신청하기/ }),
     ).toHaveAttribute('href', 'https://naver.me/xsZWHr8t')
   })
 })
