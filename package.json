@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/check-asset-sizes.mjs && tsc -b && vite build",
+    "build": "node scripts/check-asset-sizes.mjs && tsc -b && vite build && vite build --ssr src/entry-prerender.tsx --outDir .prerender && node scripts/prerender.mjs",
     "test": "vitest",
     "test:run": "vitest run"
   },

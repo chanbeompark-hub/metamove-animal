@@ -1,6 +1,7 @@
 .worktrees/
 node_modules/
 dist/
+.prerender/
 coverage/
 *.log
 *.tsbuildinfo

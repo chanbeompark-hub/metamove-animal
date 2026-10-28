@@ -1,4 +1,5 @@
 import { Header } from './components/Header'
+import { searchSchema } from './content/searchInfo'
 import { Hero } from './components/Hero'
 import { MobileApplyBar } from './components/MobileApplyBar'
 import { WhatIsAnimalFlow } from './components/WhatIsAnimalFlow'
@@ -12,6 +13,7 @@ import { Footer } from './components/Footer'
 export default function App() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(searchSchema).replace(/</g, '\\u003c') }} />
       <Header />
       <main>
         <Hero />

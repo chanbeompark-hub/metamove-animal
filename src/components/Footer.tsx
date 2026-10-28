@@ -1,3 +1,5 @@
+import { CenterInfo } from './CenterInfo'
+
 export function Footer() {
   return (
     <footer className="site-footer">
@@ -7,6 +9,7 @@ export function Footer() {
         <span>METAMOVE GYM PT · SANGDONG</span>
       </div>
       <a href="#top">BACK TO TOP ↑</a>
+      <CenterInfo />
     </footer>
   )
 }

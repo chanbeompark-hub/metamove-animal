@@ -225,6 +225,16 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .site-footer { min-height: 270px; padding: 58px max(40px, calc((100vw - 1440px) / 2)); background: var(--blue); color: var(--white); display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 40px; }
 .site-footer > p { grid-column: 1 / -1; font-size: clamp(32px, 5vw, 70px); font-weight: 800; letter-spacing: -.055em; }
 .site-footer div { display: flex; gap: 16px; align-items: baseline; }
+.center-info { grid-column: 1 / -1; width: 100%; border-top: 1px solid rgba(255,255,255,.4); padding-top: 16px; font-size: 13px; line-height: 1.8; color: #fff; }
+.center-info > summary { cursor: pointer; width: fit-content; min-height: 44px; display: list-item; padding: 10px 4px; font-weight: 500; }
+.center-info > section { max-width: 900px; padding: 12px 0 8px; }
+.center-info h2, .center-info h3 { font-size: 15px; line-height: 1.7; margin: 18px 0 8px; }
+.center-info p, .center-info address { margin: 8px 0; font-style: normal; }
+.center-info nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 16px 0; }
+.center-info a { text-decoration: underline; text-underline-offset: 4px; }
+.center-info dl > div { display: block; padding: 12px 0; }
+.center-info dt { font-weight: 700; }
+.center-info dd { margin: 4px 0 0; }
 .site-footer div span, .site-footer > a { font-size: 10px; letter-spacing: .12em; }
 .mobile-apply { display: none; }
 
