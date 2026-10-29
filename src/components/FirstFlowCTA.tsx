@@ -1,4 +1,5 @@
 import { ApplyLink } from './ApplyLink'
+import { AdvanceFlowSummary } from './AdvanceFlowSummary'
 import { OutdoorSpecialCard } from './OutdoorSpecialCard'
 import { siteContent } from '../content/siteContent'
 
@@ -35,7 +36,7 @@ export function FirstFlowCTA() {
         </dl>
         <div className="first-flow__apply">
           <OutdoorSpecialCard />
-          <span>무료 체험 클래스</span>
+          <AdvanceFlowSummary />
           <ApplyLink>{siteContent.applicationCta}</ApplyLink>
           <small>네이버폼이 새 창에서 열립니다.</small>
         </div>

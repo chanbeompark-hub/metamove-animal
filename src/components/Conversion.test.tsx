@@ -17,6 +17,22 @@ describe('FIRST FLOW conversion', () => {
     expect(screen.getAllByRole('link', { name: /ADVANCE FLOW 그룹 특강 신청하기/ })).toHaveLength(3)
   })
 
+  it('shows the ADVANCE FLOW weekend class details beside the two full application areas', () => {
+    render(<App />)
+
+    const summaries = screen.getAllByLabelText('ADVANCE FLOW 그룹 특강 정보')
+    expect(summaries).toHaveLength(2)
+
+    summaries.forEach((summary) => {
+      expect(within(summary).getByText('4:1 그룹 주말 특강')).toBeInTheDocument()
+      expect(within(summary).getByText('4:1 그룹 수업')).toBeInTheDocument()
+      expect(within(summary).getByText('약 120분 진행')).toBeInTheDocument()
+      expect(within(summary).getByText('이론 & 실습')).toBeInTheDocument()
+    })
+
+    expect(within(screen.getByLabelText('빠른 신청')).queryByLabelText('ADVANCE FLOW 그룹 특강 정보')).not.toBeInTheDocument()
+  })
+
   it('offers the dated outdoor special before the regular FIRST FLOW application', () => {
     render(<App />)
 

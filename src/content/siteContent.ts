@@ -7,6 +7,10 @@ type LocationImage = {
 export const siteContent = {
   applicationUrl: 'https://naver.me/xsZWHr8t',
   applicationCta: 'ADVANCE FLOW 그룹 특강 신청하기',
+  advanceFlow: {
+    title: '4:1 그룹 주말 특강',
+    details: ['4:1 그룹 수업', '약 120분 진행', '이론 & 실습'],
+  },
   outdoorSpecial: {
     applicationUrl: 'https://naver.me/GRD1R95e',
     ariaLabel: 'EP6 특강 안내',

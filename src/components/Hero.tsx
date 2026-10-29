@@ -1,4 +1,5 @@
 import { siteContent } from '../content/siteContent'
+import { AdvanceFlowSummary } from './AdvanceFlowSummary'
 import { ApplyLink } from './ApplyLink'
 import { OutdoorSpecialCard } from './OutdoorSpecialCard'
 
@@ -17,7 +18,10 @@ export function Hero() {
         </p>
         <OutdoorSpecialCard compact />
         <div className="hero__actions">
-          <ApplyLink>{siteContent.applicationCta}</ApplyLink>
+          <div className="advance-flow-application">
+            <AdvanceFlowSummary />
+            <ApplyLink>{siteContent.applicationCta}</ApplyLink>
+          </div>
           <a href="#proof" className="text-link">움직임이 연결되는 방식 ↓</a>
         </div>
         <div className="hero__meta" aria-label="클래스 요약">
