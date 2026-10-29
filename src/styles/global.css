@@ -184,7 +184,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special__date-mark { position: absolute; right: -8px; top: -30px; color: rgba(142,197,255,.12); font-size: 150px; font-weight: 900; line-height: 1; letter-spacing: -.08em; pointer-events: none; }
 .outdoor-special__eyebrow { position: relative; z-index: 1; color: var(--sky); font-size: 10px; font-weight: 800; letter-spacing: .16em; }
 .outdoor-special h3 { position: relative; z-index: 1; max-width: 420px; font-size: clamp(23px, 2.3vw, 34px); line-height: 1.25; letter-spacing: -.03em; word-break: keep-all; overflow-wrap: break-word; text-wrap: balance; }
-.outdoor-special__tagline { position: relative; z-index: 1; max-width: 37ch; color: rgba(255,255,255,.78); font-size: 14px; line-height: 1.65; word-break: keep-all; text-wrap: pretty; }
+.outdoor-special__tagline { position: relative; z-index: 1; max-width: 37ch; display: grid; gap: 6px; color: rgba(255,255,255,.78); font-size: 14px; line-height: 1.65; word-break: keep-all; text-wrap: pretty; }
 .outdoor-special__facts { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; }
 .outdoor-special__facts li { display: flex; align-items: center; gap: 8px; }
 .outdoor-special__facts li:not(:last-child)::after { content: ''; width: 3px; height: 3px; margin-left: 8px; background: var(--sky); border-radius: 50%; }
@@ -199,7 +199,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special__program li:not(:last-child)::after { content: '→'; color: var(--sky); }
 .outdoor-special__note { position: relative; z-index: 1; margin-top: -8px; color: rgba(255,255,255,.62); font-size: 11px; line-height: 1.6; word-break: keep-all; }
 .outdoor-special__location { position: relative; z-index: 1; display: grid; gap: 8px; margin: 2px 0 0; }
-.outdoor-special__location img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; border: 1px solid rgba(142,197,255,.45); background: #030b1b; }
+.outdoor-special__location img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain; object-position: center; border: 1px solid rgba(142,197,255,.45); background: #030b1b; }
 .outdoor-special__location figcaption { color: var(--sky); font-size: 11px; font-weight: 700; letter-spacing: .04em; }
 .first-flow__apply .outdoor-special__link { position: relative; z-index: 1; background: var(--white); color: var(--navy); box-shadow: 5px 5px 0 var(--blue); }
 .first-flow__apply .outdoor-special__link:hover { background: var(--sky); box-shadow: 3px 3px 0 var(--blue); }

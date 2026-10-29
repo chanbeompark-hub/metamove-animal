@@ -16,22 +16,28 @@ export function OutdoorSpecialCard({ compact = false }: OutdoorSpecialCardProps)
       </span>
       <p className="outdoor-special__eyebrow">{siteContent.outdoorSpecial.eyebrow}</p>
       <h3>{siteContent.outdoorSpecial.title}</h3>
-      <p className="outdoor-special__tagline">{siteContent.outdoorSpecial.tagline}</p>
+      <div className="outdoor-special__tagline">
+        {siteContent.outdoorSpecial.taglines.map((tagline) => <p key={tagline}>{tagline}</p>)}
+      </div>
       <ul className="outdoor-special__facts" aria-label="EP6 특강 정보">
         {siteContent.outdoorSpecial.facts.map((fact) => <li key={fact}>{fact}</li>)}
       </ul>
       <div className="outdoor-special__benefit" aria-label="EP6 참여자 제공 혜택">
         <p>{siteContent.outdoorSpecial.benefit.title}</p>
         <strong>{siteContent.outdoorSpecial.benefit.description}</strong>
-        <span>{siteContent.outdoorSpecial.benefit.punchline}</span>
+        {siteContent.outdoorSpecial.benefit.punchline && (
+          <span>{siteContent.outdoorSpecial.benefit.punchline}</span>
+        )}
       </div>
-      <div className="outdoor-special__program" aria-label="EP6 진행 시간">
-        <p>PROGRAM</p>
-        <ol>
-          {siteContent.outdoorSpecial.program.map((item) => <li key={item}>{item}</li>)}
-        </ol>
-      </div>
-      {!compact && (
+      {siteContent.outdoorSpecial.program.length > 0 && (
+        <div className="outdoor-special__program" aria-label="EP6 진행 시간">
+          <p>PROGRAM</p>
+          <ol>
+            {siteContent.outdoorSpecial.program.map((item) => <li key={item}>{item}</li>)}
+          </ol>
+        </div>
+      )}
+      {!compact && siteContent.outdoorSpecial.programNote && (
         <p className="outdoor-special__note">{siteContent.outdoorSpecial.programNote}</p>
       )}
       {!compact && siteContent.outdoorSpecial.locationImage && (
