@@ -204,7 +204,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--sky); outline-
 .outdoor-special__program li:not(:last-child)::after { content: '→'; color: var(--sky); }
 .outdoor-special__note { position: relative; z-index: 1; margin-top: -8px; color: rgba(255,255,255,.62); font-size: 11px; line-height: 1.6; word-break: keep-all; }
 .outdoor-special__location { position: relative; z-index: 1; display: grid; gap: 8px; margin: 2px 0 0; }
-.outdoor-special__location img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: contain; object-position: center; border: 1px solid rgba(142,197,255,.45); background: #030b1b; }
+.outdoor-special__location img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; border: 1px solid rgba(142,197,255,.45); background: #030b1b; }
 .outdoor-special__location figcaption { color: var(--sky); font-size: 11px; font-weight: 700; letter-spacing: .04em; }
 .first-flow__apply .outdoor-special__link { position: relative; z-index: 1; background: var(--white); color: var(--navy); box-shadow: 5px 5px 0 var(--blue); }
 .first-flow__apply .outdoor-special__link:hover { background: var(--sky); box-shadow: 3px 3px 0 var(--blue); }
