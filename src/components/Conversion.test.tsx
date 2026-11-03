@@ -48,7 +48,7 @@ describe('FIRST FLOW conversion', () => {
     expect(within(outdoorSpecial).getByRole('heading', {
       name: 'EP6. 애니멀플로우 IN 메타무브짐 PT 상동역점',
     })).toBeInTheDocument()
-    expect(within(outdoorSpecial).getByText('11월 7일(토) 오후 12시')).toBeInTheDocument()
+    expect(within(outdoorSpecial).getByText('11월 7일(토) 오후 1시')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('주말 날씨가 많이 추워져 부천 센터에서 진행합니다.')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('더욱 전문성 있는 수업으로 준비하겠습니다!')).toBeInTheDocument()
     expect(within(outdoorSpecial).getByText('메타무브짐 PT 상동역점')).toBeInTheDocument()
@@ -80,7 +80,7 @@ describe('FIRST FLOW conversion', () => {
     expect(within(hero).getByRole('heading', {
       name: 'EP6. 애니멀플로우 IN 메타무브짐 PT 상동역점',
     })).toBeInTheDocument()
-    expect(within(hero).getByText('11월 7일(토) 오후 12시')).toBeInTheDocument()
+    expect(within(hero).getByText('11월 7일(토) 오후 1시')).toBeInTheDocument()
     expect(within(hero).getByText('메타무브짐 PT 상동역점')).toBeInTheDocument()
     expect(within(hero).getByText('경기 부천시 원미구 송내대로265번길 67 3층 303호')).toBeInTheDocument()
     const heroBenefit = within(hero).getByLabelText('EP6 참여자 제공 혜택')
